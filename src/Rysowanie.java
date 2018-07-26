@@ -13,7 +13,6 @@ public class Rysowanie extends JFrame {
       
     public Rysowanie()
     {
-        
     this.setTitle("Rysowanie");
     this.setBounds(600,300,800,600);
 
