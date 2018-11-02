@@ -24,7 +24,7 @@ public class Rysowanie extends JFrame {
             startAnimation();
         }
     });
-    JButton pStop = (JButton)panelP.add(new JButton("Usu�"));
+    JButton pStop = (JButton)panelP.add(new JButton("Usun"));
     pStop.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent ae) 
@@ -38,11 +38,11 @@ public class Rysowanie extends JFrame {
         public void actionPerformed(ActionEvent ae) 
         {
             pauseAnimation();
-            String stan =  PanelRys.pauza ==  false ? "Wstrzymaj" : "Wzn�w";
+            String stan =  PanelRys.pauza ==  false ? "Wstrzymaj" : "Wznow";
             pPauza.setText(stan);
         }
     });
-    JButton pPrUp = (JButton)panelP.add(new JButton("Pr�dko�� +"));
+    JButton pPrUp = (JButton)panelP.add(new JButton("Predkosc +"));
     pPrUp.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent ae) 
@@ -51,7 +51,7 @@ public class Rysowanie extends JFrame {
         sPredkosc.setValue(20-PanelRys.predkosc);
         }
     });
-    JButton pPrDown = (JButton)panelP.add(new JButton("Pr�dko�� -"));
+    JButton pPrDown = (JButton)panelP.add(new JButton("Predkosc -"));
     pPrDown.addActionListener(new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent ae) 
